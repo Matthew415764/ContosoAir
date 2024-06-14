@@ -9,7 +9,7 @@ trigger:
 resources:
  pipelines:
   - pipeline: buildContosoAir # identifier for the resource used in pipeline resource variables
-    source: Student1-41595909.ContosoAir # name of the pipeline that produces the artifact
+    source: Matthew415764.ContosoAir # name of the pipeline that produces the artifact
     trigger:
      branches:
       include:
@@ -19,7 +19,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- 
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: 'specific'
